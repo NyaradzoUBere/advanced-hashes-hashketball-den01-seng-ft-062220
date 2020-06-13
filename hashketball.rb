@@ -164,9 +164,10 @@ end
 puts shoe_size("Jeff Adrien")
 
 def team_colors(team)
-  game_hash.each do |key, value|
-    if value[:team_name] = team
-      return value[:colors]
+
+  game_hash.each do |k, v|
+    if v[:team_name] == team
+      return v[:colors]
     end
   end
 end
