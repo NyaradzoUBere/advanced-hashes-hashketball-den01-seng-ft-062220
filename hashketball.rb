@@ -199,15 +199,17 @@ end
 
 puts player_numbers("Brooklyn Nets")
 
-def player_stats(player_name)
-  
-  game_hash.each do |key, value|
-    value[:players].each do |element|
-     if element[:player_name] = player_name
-       return element
-     end
-   end
- end
+def player_stats(player)
+
+game_hash.each do |key, value|
+  value[:players].each do |element|
+    if element[:player_name] == player
+      return element
+    end
+  end
+end
+
+end
 
 puts player_stats("Kemba Walker")
 
