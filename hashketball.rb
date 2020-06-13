@@ -215,7 +215,12 @@ def big_shoe_rebounds
     value[:players].each do |element|
       if element[:shoe] == element[:shoe].max
         return element[:rebounds]
-        
+      end
+    end
+  end
+end
+
+
   
 
 
