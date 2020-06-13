@@ -171,7 +171,7 @@ def team_colors(team_name)
   end
 end
 
-puts team_colors("Brooklyn Nets")
+
 
 def team_names
   teams = []
