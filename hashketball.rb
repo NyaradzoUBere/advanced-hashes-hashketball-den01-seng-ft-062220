@@ -213,7 +213,7 @@ puts player_stats("Kemba Walker")
 def big_shoe_rebounds
   game_hash.each do |key, value|
     value[:players].each do |element|
-      if element[:shoe] == element[:shoe].max
+      if element[:shoe] == 19
         return element[:rebounds]
       end
     end
